@@ -1,0 +1,4 @@
+MonoBank 4%
+UniversalBank 2.5%
+PrivatBank 1%
+UkrSibBank 2%
