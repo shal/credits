@@ -1,4 +1,35 @@
-MonoBank 4%
-UniversalBank 2.5%
-PrivatBank 1%
-UkrSibBank 2%
+MonoBank      0.1%   30 DAYS
+UniversalBank 0.1%   20 DAYS
+PrivatBank    0.3%   30 DAYS
+UkrSibBank    0.2%   15 DAYS
+UkrSibBank    0.1%   10 DAYS
+MonoBank      0.1%   30 DAYS
+UniversalBank 0.1%   20 DAYS
+PrivatBank    0.3%   30 DAYS
+UkrSibBank    0.2%   15 DAYS
+UkrSibBank    0.1%   10 DAYS
+MonoBank      0.1%   30 DAYS
+UniversalBank 0.1%   20 DAYS
+PrivatBank    0.3%   30 DAYS
+UkrSibBank    0.2%   15 DAYS
+UkrSibBank    0.1%   10 DAYS
+MonoBank      0.1%   30 DAYS
+UniversalBank 0.1%   20 DAYS
+PrivatBank    0.3%   30 DAYS
+UkrSibBank    0.2%   15 DAYS
+UkrSibBank    0.1%   10 DAYS
+MonoBank      0.1%   30 DAYS
+UniversalBank 0.1%   20 DAYS
+PrivatBank    0.3%   30 DAYS
+UkrSibBank    0.2%   15 DAYS
+UkrSibBank    0.1%   10 DAYS
+MonoBank      0.1%   30 DAYS
+UniversalBank 0.1%   20 DAYS
+PrivatBank    0.3%   30 DAYS
+UkrSibBank    0.2%   15 DAYS
+UkrSibBank    0.1%   10 DAYS
+MonoBank      0.1%   30 DAYS
+UniversalBank 0.1%   20 DAYS
+PrivatBank    0.3%   30 DAYS
+UkrSibBank    0.2%   15 DAYS
+UkrSibBank    0.1%   10 DAYS

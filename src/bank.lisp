@@ -5,11 +5,11 @@
   (
     (name
       :initarg :name
-      :accessor name
+      :accessor bank-name
     )
     (credits
       :initarg :credits
-      :accessor credits
+      :accessor bank-credits
     )
   )
 )
@@ -18,8 +18,7 @@
 (defclass Mono(Bank)
   (
     (name
-      :initarg :name
-      :accessor name
+      :reader bank-name
       :initform "MonoBank"
     )
   )
@@ -29,8 +28,7 @@
 (defclass Privat(Bank)
   (
     (name
-      :initarg :name
-      :accessor name
+      :reader bank-name
       :initform "PrivatBank"
     )
   )
@@ -40,8 +38,7 @@
 (defclass Universal(Bank)
   (
     (name
-      :initarg :name
-      :accessor name
+      :reader bank-name
       :initform "UniversalBank"
     )
   )
