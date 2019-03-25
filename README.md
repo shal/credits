@@ -1,4 +1,4 @@
-# Bank Credits
+# Credits
 
 ## Overview
 
