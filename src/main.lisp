@@ -3,7 +3,6 @@
 
 (in-package :ltk)
 
-;; Reads file content into string.
 (defun content (filename)
   (with-open-file (stream filename)
     (let ((contents (make-string (file-length stream))))
@@ -13,7 +12,6 @@
   )
 )
 
-;; Splits string into array of strings by dot.
 (defun read-lines (string)
   (loop for start = 0 then (1+ finish)
     for finish = (position #\Newline string :start start)
@@ -33,6 +31,7 @@
       (
         (lines (read-lines (content "./data/credits.txt")))
         (f (make-instance 'frame))
+        (choosen-credit (make-instance 'label :master f :text "Nothing"))
         (top-frame (make-instance 'frame :master f))
         (left-frame (make-instance 'frame :master top-frame))
         (right-frame (make-instance 'frame :master top-frame))
@@ -61,18 +60,23 @@
                                               (
                                                 (selected-credit (listbox-get-selection list-of-credits))
                                               )
-                                              ;; TODO: Find real index of value.
+                                              (setf (text choosen-credit) (nth (car selected-credit) lines))
                                               (with-open-file (stream "./data/user_data.txt" :direction :output)
                                                 (format stream "~a" (car selected-credit))
                                               )
                                             )
-                                          )
-                                        ))
+                                          )))
       )
 
       (listbox-append list-of-credits lines)
       ;; Show right selected value.
-      (listbox-select list-of-credits (parse-integer (content "./data/user_data.txt")))
+      (let
+        (
+          (selected-credit (parse-integer (content "./data/user_data.txt")))
+        )
+        (listbox-select list-of-credits selected-credit)
+        (setf (text choosen-credit) (nth selected-credit lines))
+      )
 
       ;;; Build the GUI.
       (pack f)
@@ -87,7 +91,8 @@
       (configure search-field :width 38)
       (configure search-field :height 1)
 
-      (pack list-of-credits :after top-frame)
+      (pack choosen-credit :after top-frame)
+      (pack list-of-credits :after choosen-credit)
 
       (configure list-of-credits :width 50)
       (configure list-of-credits :height 30)
