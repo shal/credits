@@ -18,6 +18,12 @@ Implement the selection and search for a credit.
 - [Common Lisp](https://lisp-lang.org/)
 - [TK](https://en.wikipedia.org/wiki/Tk_(software))
 
+Create file with index of selected credit by default.
+
+```sh
+$ echo "0" > data/user_data.txt
+```
+
 Run command below to start the application
 
 ```sh
